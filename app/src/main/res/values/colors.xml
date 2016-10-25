@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="window_background">#FFF5F5F5</color>
+
+    <color name="body_text_1_inverse">#deffffff</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+
+
+    <color name="card1">#E9B96D</color>
+    <color name="card2">#B4ABA6</color>
+    <color name="card3">#35455C</color>
+    <color name="card4">#435A62</color>
+
+    <color name="body_text_1">#de000000</color>
+    <color name="body_text_2">#8a000000</color>
+    <color name="body_text_3">#60000000</color>
+    <color name="body_text_disabled">#44000000</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+
+
+    <color name="goodWeather">#2196f3</color>
+    <color name="rainyWeather">#78909C</color>
+    <color name="sunnyWeather">#FFB300</color>
+    <color name="warningWeather">#ff1744</color>
+    <color name="badWeather">#455A64</color>
+    <color name="colorTransparent">#00000000</color>
+</resources>
