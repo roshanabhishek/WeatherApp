@@ -77,6 +77,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                 case R.id.btn_sign_in:
 // Signin button clicked
                     signInWithGplus();
+                    Intent intent = new Intent(this,MainPage.class);
+                    startActivity(intent);
+                    finish();
                     break;
                 //  case R.id.btn_sign_out:
 // logout button clicked
@@ -105,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     @Override
     public void onConnected(Bundle bundle) {
         mSignInClicked = false;
-        Toast.makeText(this, "User is connected!", Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, "User is connected!", Toast.LENGTH_LONG).show();
 // Get user's information
         getProfileInformation();
 // Update the UI after signin

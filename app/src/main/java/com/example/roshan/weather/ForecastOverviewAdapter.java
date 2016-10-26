@@ -23,31 +23,31 @@ import java.util.Date;
  * Created by roshan on 25/10/16.
  */
 
-public class ForecastOverviewAdapter extends RecyclerView.Adapter <ForecastOverviewAdapter.ViewHolder> implements View.OnClickListener {
+public class ForecastOverviewAdapter extends RecyclerView.Adapter<ForecastOverviewAdapter.ViewHolder> implements View.OnClickListener {
 
-// Provide a direct reference to each of the views within a data item
-// Used to cache the views within the item layout for fast access
-public static class ViewHolder extends RecyclerView.ViewHolder {
+    // Provide a direct reference to each of the views within a data item
+    // Used to cache the views within the item layout for fast access
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
-    // Your holder should contain a member variable
-    // for any view that will be set as you render a row
-    public TextView tvDayName;
-    public TextView tvDescription;
-    public TextView tvTemperature;
-    public TextView tvMaxTemp, tvMinTemp;
-    public ImageView ivWeatheric;
-    public LinearLayout cvCard;
-    // We also create a constructor that accepts the entire item row
-    // and does the view lookups to find each subview
-    public ViewHolder(View itemView) {
-        super(itemView);
-        this.tvDayName = (TextView) itemView.findViewById(R.id.tvName);
-        this.tvDescription = (TextView) itemView.findViewById(R.id.tvHome);
-        this.tvTemperature = (TextView) itemView.findViewById(R.id.genre);
-        this.ivWeatheric = (ImageView) itemView.findViewById(R.id.Stat);
-        this.cvCard = (LinearLayout) itemView.findViewById(R.id.daycard);
+        // Your holder should contain a member variable
+        // for any view that will be set as you render a row
+        public TextView tvDayName;
+        public TextView tvDescription;
+        public TextView tvTemperature;
+        public TextView tvMaxTemp, tvMinTemp;
+        public ImageView ivWeatheric;
+        public LinearLayout cvCard;
+        // We also create a constructor that accepts the entire item row
+        // and does the view lookups to find each subview
+        public ViewHolder(View itemView) {
+            super(itemView);
+            this.tvDayName = (TextView) itemView.findViewById(R.id.tvName);
+            this.tvDescription = (TextView) itemView.findViewById(R.id.tvHome);
+            this.tvTemperature = (TextView) itemView.findViewById(R.id.genre);
+            this.ivWeatheric = (ImageView) itemView.findViewById(R.id.Stat);
+            this.cvCard = (LinearLayout) itemView.findViewById(R.id.daycard);
+        }
     }
-}
 
     private ArrayList<Day> users;
     // Store the context for later use
@@ -92,8 +92,8 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
     // Return the total count of items
     @Override
     public int getItemCount() {
-        return users.size();
-    }
+         return users.size();
+   }
 
     @Override
     public void onClick(View v){

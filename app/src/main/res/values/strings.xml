@@ -21,4 +21,6 @@
     <string name="sunrise">Sunrise</string>
     <string name="sunset">Sunset</string>
     <string name="refresh">Refresh</string>
+    <string name="back">Press back again to leave</string>
+    <string name="app" translatable="false">App</string>
 </resources>

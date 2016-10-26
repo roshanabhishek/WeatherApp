@@ -333,7 +333,7 @@
                                                     android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
                                                     android:id="@+id/qt"
-                                                    android:text="Tomorrow"
+                                                    android:text="Tommorow"
                                                     android:textStyle="bold"
                                                     android:paddingLeft="8dp"
                                                     android:paddingRight="8dp"
@@ -372,7 +372,20 @@
                                         </LinearLayout>
                                     </LinearLayout>
                                 </LinearLayout>
-
+                                <LinearLayout
+                                    android:background="#fff"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <Button
+                                        android:id="@+id/viewmorebtn"
+                                        android:onClick="launchDetails"
+                                        android:layout_width="wrap_content"
+                                        android:visibility="gone"
+                                        android:layout_height="wrap_content"
+                                        android:text="List view" android:theme="@style/MyButton"
+                                        style="@style/Widget.AppCompat.Button.Borderless"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
@@ -415,12 +428,12 @@
                                         android:padding="24dp">
 
                                         <TextView
-                                            android:text="Fehler"
+                                            android:text="Error"
                                             android:textAlignment="center"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:textColor="@color/colorPrimary"
-                                            android:textSize="25dp"/>
+                                            android:textSize="@dimen/text_size_xlarge"/>
 
                                         <TextView
                                             android:textAlignment="center"
@@ -428,20 +441,11 @@
                                             android:layout_height="wrap_content"
                                             android:layout_marginTop="16dp"
                                             android:autoLink="web"
-                                            android:text="Flalmdm"
+                                            android:text="@string/unknown_error"
                                             android:textColor="@color/body_text_2"
                                             android:textSize="@dimen/text_size_medium" />
 
-                                        <TextView
-                                            android:id="@+id/errorcode"
-                                            android:textAlignment="center"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="16dp"
-                                            android:autoLink="web"
-                                            android:text="Error Statuscoode: Uknwn"
-                                            android:textColor="#8a000000"
-                                            android:textSize="14sp" />
+
                                     </LinearLayout>
                                 </RelativeLayout>
                             </FrameLayout>
@@ -451,12 +455,6 @@
             </LinearLayout>
         </android.support.v4.widget.SwipeRefreshLayout>
     </android.support.design.widget.CoordinatorLayout>
-
-    <!-- Your content layout goes here -->
-    <!-- include your content layout -->
-    <include
-        android:id="@+id/layout" layout="@layout/content_layout"/>
-
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_height="match_parent"
